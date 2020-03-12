@@ -6,7 +6,7 @@ Avoid Widget Hell.
 
 ```dart
 Childed()
-  .child((child) => Padding(child))
+  .child((child) => Padding(child: child))
   .child((child) => Card(child: child))
   .child((child) => Padding(child: child))
   // ... so on
