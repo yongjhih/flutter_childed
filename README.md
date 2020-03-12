@@ -5,9 +5,10 @@ Avoid Widget Hell.
 ## Usage
 
 ```dart
- Childed((child) => Padding(child))
-   .child((child) => Card(child: child))
-   .child((child) => Padding(child: child))
-   // ... so on
-   .build(Text()) // leaf widget
+Childed()
+  .child((child) => Padding(child))
+  .child((child) => Card(child: child))
+  .child((child) => Padding(child: child))
+  // ... so on
+  .build(Text()) // leaf widget
 ```
