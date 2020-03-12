@@ -11,6 +11,8 @@ class Childed {
   }
 
   Widget build(Widget child) {
-    return children.reversed.fold(child, (last, it) => it(last));
+    final widget = children.reversed.fold(child, (last, it) => it(last));
+    children.clear();
+    return widget;
   }
 }
